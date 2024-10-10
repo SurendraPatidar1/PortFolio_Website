@@ -1024,6 +1024,83 @@ pre {
   .offset-md-11 {
     margin-left: 91.66667%; } }
 
+/* Box and icon alignment */
+.box {
+  background: #1c1c1c;  /* Dark background for the box */
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  background: #ffbd39; /* Change background on hover */
+}
+
+.icon {
+  background: #000;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  transition: 0.3s;
+}
+
+.icon {
+  background: #000;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  transition: 0.3s;
+}
+
+.icon i {
+  font-size: 30px;
+  color: #ffd700;  /* Gold color */
+}
+
+.box {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  background: #ffbd39;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+
+
+
 @media (min-width: 992px) {
   .col-lg {
     -ms-flex-preferred-size: 0;
@@ -9170,6 +9247,69 @@ textarea.form-control {
     margin: 0 10px 10px 0; }
     .footer-small-nav > li a:hover, .footer-small-nav > li a:focus {
       color: #ffbd39; }
+
+      .social-container {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Social container styling */
+.social-container {
+  display: flex;
+  flex-direction: column; /* Aligns the text and icons vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styling for the text "Find me on" */
+.social-container span {
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #ddd;
+}
+
+/* Social icons list styling */
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each list item containing the icon */
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #ffd700; /* Icon color (gold) */
+  text-align: center;
+  font-size: 24px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on icons */
+.social-icons li a:hover {
+  background-color: #555; /* Darker hover effect */
+}
+
+/* SVG icon styling */
+.social-icons svg {
+  stroke: #ffd700; /* Gold color */
+  width: 24px;
+  height: 24px;
+}
+    
 
 .media .ftco-icon {
   width: 100px; }
