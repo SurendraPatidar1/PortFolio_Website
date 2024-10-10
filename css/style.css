@@ -8721,13 +8721,20 @@ h1, h2, h3, h4, h5,
           .custom-home-image {
             background-size: cover;
             background-position: center center;
-            width: 200px; /* Make width and height equal for a circular effect */
-            height: 200px;
-            border-radius: 50%; /* Circle shape */
-            overflow: hidden; /* Ensures the image stays within the rounded corners */
+            width: 200px; /* Define the width */
+            height: 200px; /* Define the height */
+            border-bottom-left-radius: 20%; /* Round the bottom-left corner */
+            border-bottom-right-radius: 20%; /* Round the bottom-right corner */
+            overflow: hidden; /* Ensure the image stays within the rounded corners */
             margin-right: 20px; /* Optional: Adds space between the image and text */
             display: block;
-          }
+            position: absolute; /* Position it absolutely */
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            z-index: 1; /* Ensure it is above other content */
+        }
+        
+        
           
 
 .hero-wrap {
